@@ -33,6 +33,8 @@ app.use(layouts);
 
 const index = require('./routes/index');
 app.use('/', index);
+const phonesApi = require('./routes/phones-api.js');
+app.use('/api', phonesApi);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

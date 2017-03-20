@@ -9,8 +9,6 @@ const phoneSchema = new Schema({
 
 });
 
-questionSchema.set('timestamps', true);
-
 const Phone = mongoose.model('Phone', phoneSchema);
 
 module.exports = Phone;
